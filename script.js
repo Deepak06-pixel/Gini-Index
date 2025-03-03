@@ -149,6 +149,52 @@ document.addEventListener("DOMContentLoaded", function () {
             return { p90p10_ratio: null };
         }
     }
+    function adjustLayout() {
+        const screenWidth = window.innerWidth;
+        const container = document.querySelector(".container.step3");
+        const formContainer = document.querySelector(".form-container1");
+        const pyramid = document.querySelector(".pyramid-container");
+        
+        if (screenWidth < 768) {
+            // Mobile View
+            if (container) container.style.flexDirection = "column";
+            if (formContainer) formContainer.style.width = "100%";
+            if (pyramid) pyramid.style.width = "90%";
+        } else {
+            // Desktop View
+            if (container) container.style.flexDirection = "row";
+            if (formContainer) formContainer.style.width = "50%";
+            if (pyramid) pyramid.style.width = "70%";
+        }
+    }
+
+    // Adjust layout on page load and window resize
+    adjustLayout();
+    window.addEventListener("resize", adjustLayout);
+
+    // (Rest of your existing code remains unchanged)
+
+    function allowOnlyNumbers(input, maxLength) {
+        input.addEventListener("input", function () {
+            this.value = this.value.replace(/\D/g, "").slice(0, maxLength);
+        });
+
+        input.addEventListener("paste", function (event) {
+            event.preventDefault();
+            const pastedData = event.clipboardData.getData("text").replace(/\D/g, "").slice(0, maxLength);
+            document.execCommand("insertText", false, pastedData);
+        });
+    }
+
+    const incomeInput = document.getElementById("income");
+    const debtInput = document.getElementById("emi");
+    const dependentsInput = document.getElementById("dependents");
+    const ageInput = document.getElementById("age");
+
+    allowOnlyNumbers(incomeInput, 7);
+    allowOnlyNumbers(debtInput, 5);
+    allowOnlyNumbers(dependentsInput, 1);
+
 
     submitButton.addEventListener("click", async () => {
         submitButton.innerHTML = "Calculating...";
