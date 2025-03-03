@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gini Index</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQZ62FK855"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SQZ62FK855'); // Replace with your Measurement ID
+    </script>
+</head>
+
+<body>
+    <section id="container">
+        <div>
+            <h1 class="highlight"><span class="purple">Gini</span>Index.com</h1>
+        </div>
+
+        <!-- Description -->
+        <div>
+            <p class="description">
+                The Gini index determines a Nation’s level of Income Inequality by measuring the
+                Income distribution or wealth distribution across its population.
+            </p>
+        </div>
+        <div>
+            <div class="cloud">
+                <div class="graph"></div>
+            </div>
+
+            <div class="illustration"></div>
+
+            <div class="arrow"></div>
+        </div>
+    </section>
+    <section id="income-pyramid">
+        <div class="heading">
+            <img src="images/Income line.svg" id="heading">
+        </div>
+       <!-- Inside the ratio div -->
+        <div class="ratio">
+            <p>P90/P10 Ratio: <span id="p90p10Result">--</span></p>
+        </div>
+
+        <img src="images/user.png" alt="User Guide" id="userGuideIcon" class="user-guide-icon">
+
+        <!-- Modal for User Guide -->
+        <div id="userGuideModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>User Guide</h2>
+                <iframe src="Geni Indexdocx ver 10_250225_143907.pdf" width="100%" height="400px"></iframe>
+                <a href="Geni Indexdocx ver 10_250225_143907.pdf" download class="download-btn">Download PDF</a>
+            </div>
+        </div>
+
+        <div class="content1">
+            <div>
+                <p class="sec2-p">Country Statistics</p>
+            <div class="stats-container">
+                <div id="Income">
+                    <div class="col">
+                        <label for="country">Country</label>
+                        <select id="country">
+                            <option value="india">INDIA</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="inr">Currency</label>
+                        <p id="inr">INR</p>
+                    </div>
+                    <div class="col">
+                        <label for="net">Net National Income</label>
+                        <p id="net">xxx,xxx,xxx Millions</p>
+                    </div>
+                </div>
+                <div class="pop-container">
+                    <div class="col1">
+                        <label for="pop">Population</label>
+                        <p id="pop">xxx,xxx,xxx Millions</p>
+                    </div>
+                    <div class="col2">
+                        <label for="pop1">Geni Index</label>
+                        <p id="pop1">32.5 %</p>
+                    </div>
+                    <div class="col3">
+                        <label for="pop2">Distribution Used</label>
+                        <p id="pop2">Pareto</p>
+                    </div>
+                </div>
+            </div>
+               
+        
+            <div class="level">
+                <div class="stats-country">
+                    <p class="heading">Levels</p>
+                </div>
+                
+                <div class="container1">
+                    <table>
+                        <tr>
+                            <td>Level 8</td>
+                            <td>98.00</td>
+                            <td><input type="text" value="100.00" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Level 7</td>
+                            <td>95.00</td>
+                            <td><input type="text" value="98.00" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Level 6</td>
+                            <td>90.00</td>
+                            <td><input type="text" value="95.00" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Level 5</td>
+                            <td>70.00</td>
+                            <td><input type="text" value="90.00" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Level 4</td>
+                            <td>50.00</td>
+                            <td><input type="text" value="70.00" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Level 3</td>
+                            <td>30.00</td>
+                            <td><input type="text" value="50.00" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Level 2</td>
+                            <td>10.00</td>
+                            <td><input type="text" value="30.00" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Level 1</td>
+                            <td>0.00</td>
+                            <td><input type="text" value="10.00" readonly></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+            <div class="pyramid-container">
+                <img src="images/pyramid.png" alt="Gini Pyramid" id="pyramid-img" width="400px">
+                <img src="images/icons.svg" id="userIcon" class="user-icon" alt="User Position">
+            
+                <!-- Custom Pointer -->
+                <div class="custom-pointer" id="custom-pointer"></div>
+            
+                <!-- Hover blocks that trigger labels -->
+                <div class="pyramid-block" style="top: 89%; height: 10%; width: 75%; left: 9%;" data-index="0"></div>
+                <div class="label" style="top: 87%; left: 36%;">Loading...</div>
+        
+                <div class="pyramid-block" style="top: 76%; height: 10%; width: 65%; left: 15%;" data-index="1"></div>
+                <div class="label" style="top: 75%; left: 39%;">Loading...</div>
+        
+                <div class="pyramid-block" style="top: 64%; height: 10%; width: 55%; left: 19%;" data-index="2"></div>
+                <div class="label" style="top: 63%; left: 35%;">Loading...</div>
+        
+                <div class="pyramid-block" style="top: 52%; height: 10%; width: 45%; left: 25%;" data-index="3"></div>
+                <div class="label" style="top: 51%; left: 38%;">Loading...</div>
+        
+                <div class="pyramid-block" style="top: 40%; height: 10%; width: 33%; left: 30%;" data-index="4"></div>
+                <div class="label" style="top: 39%; left: 34.8%;">Loading...</div>
+        
+                <div class="pyramid-block" style="top: 28%; height: 10%; width: 27%; left: 33%;" data-index="5"></div>
+                <div class="label" style="top: 27%; left: 39%;">Loading...</div>
+        
+                <div class="pyramid-block" style="top: 16%; height: 10%; width: 18%; left: 37.5%;" data-index="6"></div>
+                <div class="label" style="top: 15%; left: 37%;">Loading...</div>
+        
+                <div class="pyramid-block" style="top: 5%; height: 10%; width: 10%; left: 42%;" data-index="7"></div>
+                <div class="label" style="top: 3%; left: 42%;">Loading...</div>
+                
+            </div>
+        </div>
+        <div class="details">
+            <img src="images/click here.svg" alt="">
+            <button id="personal-data-btn" class="stats-button">Personal Data submission and stats-No private or income data is stored on server</button>
+           
+        </div>
+            <div class="container step3">
+                <div class="form-container1">
+                    <div class="form-group">
+                        <label>Monthly income credited to your account* :</label>
+                        <input id="income" type="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Net monthly spending on Debt Services* :</label>
+                        <input id="emi" type="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>No. of Dependents* :</label>
+                        <input id="dependents" type="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Age :</label>
+                        <input id="age" type="number">
+                    </div>
+                    <div class="form-group">
+                        <label>Gender :</label>
+                        <select id="gender">
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button id="submitButton" type="button">Submit</button>
+                </div>
+            </div>
+            
+            <section id="final-info" class="final-info" style="display: none;">
+                <div class="final-info1">
+                    <p>Without Debt:</p>
+                    <div class="percentile">
+                        <h1>Your percentile score</h1>
+                        <h1 id="withoutDebtScore">%</h1>
+                    </div>
+                    <p>There are <span id="higherIncome"></span> citizens earning more income than yours out of 100,000 Population</p>
+                    <p><span id="lowerIncome"></span> citizens earn less income than yours out of 100,000 population</p>
+                </div>
+            
+                <div class="final-info1">
+                    <p>With Debt:</p>
+                    <div class="percentile">
+                        <h1>Your percentile score</h1>
+                        <h1 id="withDebtScore">%</h1>
+                    </div>
+                    <p>There are <span id="withDebtHigher"></span> citizens earning more income than yours out of 100,000 Population</p>
+                    <p><span id="withDebtLower"></span> citizens earn less income than yours out of 100,000 population</p>
+                </div>
+            </section>            
+    <section class="footer">
+        <div><p>Powered By: Ants Applied Datascience Pvt LTD.,</p></div>
+        <div><a href="https://www.Antsai.in" target="_blank">https://www.Antsai.in</a></div>
+    </section>
+</body>
+
+</html>
