@@ -3,7 +3,6 @@
 This project visualizes a user's financial position in a Gini Pyramid based on their percentile score. It dynamically moves a user icon within a pyramid structure according to the user's financial percentile.
 
 ## Features
-- Dynamic User Positioning: The user icon moves to the correct level based on the percentile.
 - Responsive Design: Works smoothly with different screen sizes.
 - Error Handling: Handles missing elements and invalid percentile values.
 - Interactive UI: Updates position on button click.
