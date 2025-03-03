@@ -14,7 +14,7 @@ body {
 }
 
 #container {
-    background-image: url('images/background\ full.png');
+    background-image: url('background\ full.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -64,7 +64,7 @@ body {
     left: 379px;
     width: 880px;
     height: 450px;
-    background: url('images/background\ off\ money.png') no-repeat center center/contain;
+    background: url('background\ off\ money.png') no-repeat center center/contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@ body {
 .graph {
     width: 550px;
     height: 350px;
-    background: url('images/chart.svg') no-repeat center center/contain;
+    background: url('chart.svg') no-repeat center center/contain;
 }
 
 /* Arrow at Bottom */
@@ -88,7 +88,7 @@ body {
     left: 50%;
     width: 30px;
     height: 30px;
-    background: url('images/arrow.png') no-repeat center center/contain;
+    background: url('arrow.png') no-repeat center center/contain;
     transform: translateX(-50%);
     animation: bounce 1.5s infinite;
 }
@@ -614,7 +614,7 @@ button {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-image: url('images/icons2.svg'); /* Your custom symbol */
+    background-image: url('icons2.svg'); /* Your custom symbol */
     background-size: cover;
     background-repeat: no-repeat;
     display: none; /* Initially hidden */
