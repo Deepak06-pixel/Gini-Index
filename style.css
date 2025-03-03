@@ -683,7 +683,7 @@ button.disable {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-image: url('images/icons2.svg'); /* Your custom symbol */
+    background-image: url('icons2.svg'); /* Your custom symbol */
     background-size: cover;
     background-repeat: no-repeat;
     display: none; /* Initially hidden */
