@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="888" height="97" viewBox="0 0 888 97">
+  <defs>
+    <filter id="Income_Pyramid_and_Statistics" x="0" y="0" width="888" height="97" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Income_Pyramid_and_Statistics)">
+    <text id="Income_Pyramid_and_Statistics-2" data-name="Income Pyramid and Statistics" transform="translate(10 65)" fill="#6126a8" stroke="#fff" stroke-width="1" font-size="55" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Income</tspan><tspan y="0" xml:space="preserve" fill="#27212e"> Pyramid and </tspan><tspan y="0">Statistics</tspan></text>
+  </g>
+</svg>

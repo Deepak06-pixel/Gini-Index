@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="754.56" height="552.361" viewBox="0 0 754.56 552.361">
+  <defs>
+    <filter id="Path_475" x="265.087" y="23.466" width="489.473" height="497.56" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.22"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_476" x="266.587" y="31.864" width="485.843" height="485.125" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.22"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_477" x="271.917" y="28.952" width="481.665" height="487.338" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.22"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_26" data-name="Group 26" transform="translate(-728.036 -1168)">
+    <g transform="matrix(1, 0, 0, 1, 728.04, 1168)" filter="url(#Path_475)">
+      <path id="Path_475-2" data-name="Path 475" d="M1464.473,1673.293H994.5v-478.06" transform="translate(-718.91 -1165.77)" fill="none" stroke="#777" stroke-width="3"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 728.04, 1168)" filter="url(#Path_476)">
+      <path id="Path_476-2" data-name="Path 476" d="M995.5,1661.745l467.843-467.125v467.125Z" transform="translate(-719.91 -1156.76)" fill="#fcc"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 728.04, 1168)" filter="url(#Path_477)">
+      <path id="Path_477-2" data-name="Path 477" d="M999.16,1666.56l117.539-44.965,120.5-62.3,87.063-70.818,52.752-67.573,47.489-99.236,38.32-124.445V1666.56Z" transform="translate(-718.24 -1162.27)" fill="#7eabf0"/>
+    </g>
+    <text id="_of_Income" data-name="% of Income" transform="translate(980.749 1507.102) rotate(-90)" fill="#6126a8" font-size="22" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">% of Income</tspan></text>
+    <text id="_of_Population" data-name="% of Population" transform="translate(1149.421 1712.361)" fill="#6126a8" font-size="22" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">% of Population</tspan></text>
+    <text id="Line_of_Equality_45_degrees_" data-name="Line of Equality (45 degrees)" transform="translate(1140.059 1515.917) rotate(-45)" fill="#6126a8" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Line of Equality (45 degrees)</tspan></text>
+    <text id="Lorenz_Curve" data-name="Lorenz Curve" transform="translate(1258.185 1540.917) rotate(-45)" fill="#6126a8" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Lorenz Curve</tspan></text>
+    <text id="_0" data-name="0" transform="translate(981.05 1709.361)" fill="#27212e" font-size="19" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">0</tspan></text>
+    <text id="_100" data-name="100" transform="translate(1444.158 1712.361)" fill="#27212e" font-size="22" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">100</tspan></text>
+    <text id="_100-2" data-name="100" transform="translate(957.749 1191)" fill="#27212e" font-size="22" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">100</tspan></text>
+    <g id="Group_29" data-name="Group 29" transform="translate(728.036 1238.143)">
+      <text id="Gini" transform="translate(0 45.262)" fill="#27212e" font-size="22" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Gini</tspan></text>
+      <text id="_" data-name="=" transform="translate(51.185 45.262)" fill="#27212e" font-size="22" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">=</tspan></text>
+      <text id="_2" data-name="+" transform="translate(148.252 68.335)" fill="#27212e" font-size="22" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">+</tspan></text>
+      <g id="Rectangle_473" data-name="Rectangle 473" transform="translate(136.552)" fill="#fcc" stroke="#707070" stroke-width="1">
+        <rect width="42.41" height="21.936" stroke="none"/>
+        <rect x="0.5" y="0.5" width="41.41" height="20.936" fill="none"/>
+      </g>
+      <g id="Rectangle_474" data-name="Rectangle 474" transform="translate(98.53 51.185)" fill="#fcc" stroke="#707070" stroke-width="1">
+        <rect width="42.41" height="21.936" stroke="none"/>
+        <rect x="0.5" y="0.5" width="41.41" height="20.936" fill="none"/>
+      </g>
+      <g id="Rectangle_475" data-name="Rectangle 475" transform="translate(171.651 51.185)" fill="#7eabf0" stroke="#707070" stroke-width="1">
+        <rect width="42.41" height="21.936" stroke="none"/>
+        <rect x="0.5" y="0.5" width="41.41" height="20.936" fill="none"/>
+      </g>
+      <path id="Path_478" data-name="Path 478" d="M1417.284,1208.722h142.468" transform="translate(-1330.038 -1169.643)" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
